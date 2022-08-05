@@ -1,6 +1,6 @@
 # XCon: Learning with Experts for Fine-grained Category Discovery
-This repo contains the implementation of our paper: "XCon: Learning with Experts for Fine-grained Category Discovery". [arXiv](https://arxiv.org/abs/2208.01898)
-## Abstracts
+This repo contains the implementation of our paper: "XCon: Learning with Experts for Fine-grained Category Discovery". ([arXiv](https://arxiv.org/abs/2208.01898))
+## Abstract
 We address the problem of generalized category discovery (GCD) in this paper, 
 i.e. clustering the unlabeled images leveraging the information from a set of
 seen classes, where the unlabeled images could contain both seen classes and
@@ -60,32 +60,43 @@ Fine-tune the model with the evaluation of semi-supervised k-means.
 bash bash_scripts/representation_learning.sh
 ```
 ### Step 4. Semi-supervised k-means
-To run the semi-supervised k-means alone by first run
+To run the semi-supervised k-means alone by first running
 ```
 bash bash_scripts/extract_features.sh
 ```
-and then run
+and then running
 ```
 bash bash_scripts/ssk_means.sh
 ```
 ### Step 5. Estimate the number of classes
-To estimate the number of classes in the unlabeled dataset by first run
+To estimate the number of classes in the unlabeled dataset by first running
 ```
 bash bash_scripts/extract_features.sh
 ```
-and then run
+and then running
 ```
 bash bash_scripts/estimate_k.sh
 ```
 
 ## Results
-Results of our method are reported as below. 
-| **Datasets**       | **All** | **Old** | **New** |
-|:------------|:--------:|:---------:|:---------:|
-| CIFAR10 | 96.0 | 97.3 | 95.4 |
-| CIFAR100 | 74.2 | 81.2 | 60.3 |
-| ImageNet-100 | 77.6 | 93.5 | 69.7 |
-| CUB-200 | 52.1 | 54.3 | 51.0 |
-| Stanford-Cars | 40.5 | 58.8 | 31.7 |
-| FGVC-Aircraft | 47.7 | 44.4 | 49.4 |
-| Oxford-Pet | 86.7 | 91.5 | 84.1 |
+Results of our method are reported as below. You can download our model checkpoint by the link.
+| **Datasets**       | **All** | **Old** | **New** | **Models** |
+|:------------|:--------:|:---------:|:---------:|:------:|
+| CIFAR10 | 96.0 | 97.3 | 95.4 | [ckpt](https://pan.baidu.com/s/1XKHioJp002Lm7P1xmM5Htg?pwd=xhwq) |
+| CIFAR100 | 74.2 | 81.2 | 60.3 | [ckpt](https://pan.baidu.com/s/1DbUpDpFj-dlO58w6GqhyKw?pwd=rvkd) |
+| ImageNet-100 | 77.6 | 93.5 | 69.7 | [ckpt](https://pan.baidu.com/s/1G1mY85up1ji2LLxMNBJjrw?pwd=rc7o) |
+| CUB-200 | 52.1 | 54.3 | 51.0 | [ckpt](https://pan.baidu.com/s/1gtuPMF-itQvt9r5kW7Y32Q?pwd=pg9m) |
+| Stanford-Cars | 40.5 | 58.8 | 31.7 | [ckpt](https://pan.baidu.com/s/1PDVhatM6qVUZZwjBVwSgTg?pwd=6337) |
+| FGVC-Aircraft | 47.7 | 44.4 | 49.4 | [ckpt](https://pan.baidu.com/s/1SwkobAaT8l-TTlYn7IXWyQ?pwd=06u1) |
+| Oxford-Pet | 86.7 | 91.5 | 84.1 | [ckpt](https://pan.baidu.com/s/1kCUfebbKmws9EgYrvgF5Aw?pwd=ck3k) |
+
+## Citation
+If you find this repo useful for your research, please consider citing our paper:
+```
+@Article{fei2022xcon,
+        Title = {XCon: Learning with Experts for Fine-grained Category Discovery}, 
+        Author = {Yixin Fei and Zhongkai Zhao and Siwei Yang and Bingchen Zhao},
+        Year = {2022},
+        journal = {arXiv preprint arXiv:2208.01898},
+}
+```
