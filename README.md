@@ -93,10 +93,10 @@ Results of our method are reported as below. You can download our model checkpoi
 ## Citation
 If you find this repo useful for your research, please consider citing our paper:
 ```
-@Article{fei2022xcon,
-        Title = {XCon: Learning with Experts for Fine-grained Category Discovery}, 
-        Author = {Yixin Fei and Zhongkai Zhao and Siwei Yang and Bingchen Zhao},
-        Year = {2022},
-        journal = {arXiv preprint arXiv:2208.01898},
+@inproceedings{fei2022xcon,
+        title = {XCon: Learning with Experts for Fine-grained Category Discovery}, 
+        author = {Yixin Fei and Zhongkai Zhao and Siwei Yang and Bingchen Zhao},
+        booktitle={British Machine Vision Conference (BMVC)},
+        year = {2022}
 }
 ```
